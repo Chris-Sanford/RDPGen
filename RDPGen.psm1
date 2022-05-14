@@ -1,16 +1,16 @@
 #Requires -RunAsAdministrator
 #Requires -Modules ActiveDirectory
 
-#region Environment Variables - Set your environment variables here! Remove # before each =
-$smtpServer #= "mail.domain.com" #STMP Server Domain Name that accepts insecure email send requests
-$fromEmailDisplayName #= "Information Technology"
-$fromEmailAddress #= "IT@domain.com"
-$emailBodyTemplate #= "C:\Path\To\Template.htm" #Path to HTML template file to be used for Email Body
-$emailSubject #= "Work from Home User Guide" #Subject line to use in Email
-$rdsgatewayFQDN #= "rdp.domain.com" #Remote Desktop Gateway's Fully Qualified Domain Name
-$usersGroup #= "Remote_Users" #AD Users Group associated to RAP Policy on RDP Gateway
-$computersGroup #= "Remote_Computers" #AD Computers Group associated to CAP Policy on RDP Gateway
-$sslHash #= "THUMBPRINT" #The thumbprint/hash of the SSL Certificate used to sign the RDP file(s)
+#region Environment Variables - Set your environment variables here!
+$smtpServer = "mail.domain.com" #STMP Server Domain Name that accepts insecure email send requests
+$fromEmailDisplayName = "Information Technology"
+$fromEmailAddress = "IT@domain.com"
+$emailBodyTemplate = "C:\Path\To\Template.htm" #Path to HTML template file to be used for Email Body
+$emailSubject = "Work from Home User Guide" #Subject line to use in Email
+$rdsgatewayFQDN = "rdp.domain.com" #Remote Desktop Gateway's Fully Qualified Domain Name
+$usersGroup = "Remote_Users" #AD Users Group associated to RAP Policy on RDP Gateway
+$computersGroup = "Remote_Computers" #AD Computers Group associated to CAP Policy on RDP Gateway
+$sslHash = "THUMBPRINT" #The thumbprint/hash of the SSL Certificate used to sign the RDP file(s)
 #endregion
 
 function Get-UserEmailAddress ($user)
@@ -161,8 +161,6 @@ function Enable-RDPAccess
     [Parameter(Mandatory=$true)]
     [string]$computer
     )
-
-    #Check to see if environment variables have been set, if not, instruct them how to do so
 
     Get-UserEmailAddress $user
     Get-UserPrincipalName $user
