@@ -1,4 +1,5 @@
 Overview:
+
 RDPGen is a PowerShell module that generates an RDP file for a user and computer to access a Remote Desktop Gateway with the goal of streamlining the remote work enablement process. The Enable-RDPAccess function takes user input for a target user and computer, adds them to the proper Active Directory groups, generates a customized RDP gateway file, then sends an email to the end user with the RDP file attached and instructions in the body.
 
 Requirements:
