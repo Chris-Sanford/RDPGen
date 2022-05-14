@@ -21,7 +21,7 @@ RDPGen is a PowerShell module that generates an RDP file for a user and computer
 - (Optional) Customize the options within the New-RDPFile function if desired to configure the end user's RDP experience 
 - Ensure your PowerShell Execution Policy will allow the execution of this script, understanding the security risks involved (Set-ExecutionPolicy Unrestricted)
 - As a Domain Admin in an elevated PowerShell window, run the following command, replacing $USERNAME and $COMPUTERNAME accordingly:
-Enable-RDPAccess -User $USERNAME -Computer $COMPUTERNAME
+>Enable-RDPAccess -User $USERNAME -Computer $COMPUTERNAME
 
 You can target a list of user and computer pairs by running Enable-RDPAccess in a foreach loop if desired.
 
