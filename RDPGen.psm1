@@ -8,8 +8,8 @@ $fromEmailAddress = "IT@domain.com"
 $emailBodyTemplate = "C:\Path\To\Template.htm" #Path to HTML template file to be used for Email Body
 $emailSubject = "Work from Home User Guide" #Subject line to use in Email
 $rdsgatewayFQDN = "rdp.domain.com" #Remote Desktop Gateway's Fully Qualified Domain Name
-$usersGroup = "Remote_Users" #AD Users Group associated to RAP Policy on RDP Gateway
-$computersGroup = "Remote_Computers" #AD Computers Group associated to CAP Policy on RDP Gateway
+$usersGroup = "Remote_Users" #AD Users Group associated to CAP Policy on RDP Gateway
+$computersGroup = "Remote_Computers" #AD Computers Group associated to RAP Policy on RDP Gateway
 $sslHash = "THUMBPRINT" #The thumbprint/hash of the SSL Certificate used to sign the RDP file(s)
 #endregion
 
