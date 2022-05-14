@@ -5,9 +5,10 @@ RDPGen is a PowerShell module that generates an RDP file for a user and computer
 Requirements:
 - Domain Admin Rights
 - ActiveDirectory PowerShell Module (install Microsoft's Remote Server Administration Tools)
+- An SMTP (Email) Server that accepts insecure mail messages (i.e. an on-prem Exchange server)
 - Group Policy configured to enable RDP on target computers for target users
 - (Optional) The .PFX SSL Certificate file from your RDP Gateway server installed into your Personal certificate store
-- An SMTP (Email) Server that accepts insecure mail messages (i.e. an on-prem Exchange server)
+
 
 Instructions:
 - Download the module by clicking the green "Code" button on this page (you may need to be logged into GitHub)
