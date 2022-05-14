@@ -26,6 +26,6 @@ You can target a list of user and computer pairs by running Enable-RDPAccess in 
 Future Improvements:
 - Replace environment variables written within the module with a config.ini file that must be configured to use the script
 - Alert user to modify/update the config.ini file if it hasn't already been set
-- Have New-RDPFile create an RDP file based on a template .rdp file using config.ini so end users never need to modify the module
+- Have New-RDPFile create an RDP file based on a template .rdp file so modifying module is never necessary
 - Create Synopsis/Description/Help content to make it more "official"
 - Transcription/log file creation
