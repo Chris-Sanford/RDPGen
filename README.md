@@ -26,8 +26,8 @@ RDPGen is a PowerShell module that generates an RDP file for a user and computer
 You can target a list of user and computer pairs by running Enable-RDPAccess in a foreach loop if desired.
 
 ## Future Improvements:
+- Improve error handling, verbosity, parameter input validation, and comment-based help as per [these best practices](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/09-functions?view=powershell-7.2)
 - Replace environment variables written within the module with a config.ini file that must be configured to use the script
 - Alert user to modify/update the config.ini file if it hasn't already been set
 - Have New-RDPFile create an RDP file based on a template .rdp file so modifying module is never necessary
-- Create Synopsis/Description/Help content to make it more "official"
 - Transcription/log file creation
